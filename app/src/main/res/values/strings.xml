@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Multi Modulwith Hilt</string>
+    <string name="title_chat">Chat</string>
+</resources>
