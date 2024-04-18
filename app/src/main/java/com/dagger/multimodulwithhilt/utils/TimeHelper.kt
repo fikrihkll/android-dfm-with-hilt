@@ -1,6 +1,8 @@
 package com.dagger.multimodulwithhilt.utils
 
-class TimeHelper {
+import javax.inject.Inject
+
+class TimeHelper @Inject constructor() {
 
     fun extendTime(arg: String) {
         println("extended $arg")
