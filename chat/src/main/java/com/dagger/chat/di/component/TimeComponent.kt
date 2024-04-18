@@ -2,6 +2,8 @@ package com.dagger.chat.di.component
 
 import android.content.Context
 import com.dagger.multimodulwithhilt.component.TimeDependencies
+import com.dagger.multimodulwithhilt.utils.DarkThemeUtil
+import com.dagger.multimodulwithhilt.utils.ThemeUtil
 import com.dagger.multimodulwithhilt.utils.TimeHelper
 import dagger.BindsInstance
 import dagger.Component
@@ -11,6 +13,7 @@ import dagger.Component
 )
 interface TimeComponent {
     fun timeHelper(): TimeHelper
+    fun themeUtil(): ThemeUtil
 
     @Component.Builder
     interface Builder {
