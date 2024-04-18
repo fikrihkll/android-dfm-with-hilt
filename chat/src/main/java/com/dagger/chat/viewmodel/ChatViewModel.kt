@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.dagger.chat.utils.ChatAnalytics
 import com.dagger.chat.utils.ImageUtil
+import com.dagger.multimodulwithhilt.utils.ThemeUtil
 import com.dagger.multimodulwithhilt.utils.TimeHelper
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -16,7 +17,8 @@ class ChatViewModel
 constructor(
     analytics: ChatAnalytics,
     imageUtil: ImageUtil,
-    timeUtils: TimeHelper
+    timeUtils: TimeHelper,
+    themeUtil: ThemeUtil
 ): ViewModel() {
 
 
